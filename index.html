@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MadLibs</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    
+    <body>
+       
+<form id="myForm">
+
+
+<h3> A Country</h3>
+   <label for="country"></label>
+    <input type="text" id="country" name="country">
+   
+   <h3> A Name</h3>
+   <label for="name1"></label>
+    <input type="text" id="name1" name="name1">
+
+    <h3>Food</h3>
+   <label for="food1"></label>
+    <input type="text" id="food1" name="food1">
+
+    <h3>Color</h3>
+   <label for="adjective1"></label>
+    <input type="text" id="adjective1" name="adjective1">
+
+    <h3>Animal</h3>
+   <label for="animal1"></label>
+    <input type="text" id="animal1" name="animal1">
+
+       <h3>Any Sport</h3>
+<label for="verb1"></label>
+    <input type="text" id="verb1" name="verb1">
+    <input type="submit" value="Submit">
+</form> 
+     
+ <script>
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var country=document.getElementById("country").value;
+        
+        var formContents=document.getElementById("formContentsHere");
+        formContents.innerHTML = "Once upon a time, in a country called " + country;
+        
+        
+    });
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var name1=document.getElementById("name1").value;
+        
+        var formContents=document.getElementById("formContentsHere1");
+        formContents.innerHTML = "There was a very smart and strong man called " + name1;
+        
+        
+    });
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var food1=document.getElementById("food1").value;
+        
+        var formContents=document.getElementById("formContentsHere2");
+        formContents.innerHTML = "He was laying on his couch watching the news, he was going to take a nap after eating a big plate of " + food1;
+        
+        
+    });
+var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var adjective1=document.getElementById("adjective1").value;
+        
+        var formContents=document.getElementById("formContentsHere3");
+        formContents.innerHTML = "The news reporter was talking about a group of teenagers that stole a very expensive car which color was " + adjective1;
+        
+        
+    });
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var animal1=document.getElementById("animal1").value;
+        
+        var formContents=document.getElementById("formContentsHere4");
+        formContents.innerHTML = "He was in a deep dream until something woke him up, first he thought he was being robbed but at the end it was just Max, his pet " + animal1;
+        
+        
+    });
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var verb1=document.getElementById("verb1").value;
+        
+        var formContents=document.getElementById("formContentsHere5");
+        formContents.innerHTML = "He decided to go outside to walk Max, he had a very important tournament and he needed to loose some weight, he adopted Max so he could improve in " + verb1;
+        
+        
+    });
+  
+
+</script>
+<div id="formContentsHere"></div>
+<div id="formContentsHere1"></div>
+<div id="formContentsHere2"></div>
+<div id="formContentsHere3"></div>
+<div id="formContentsHere4"></div>
+<div id="formContentsHere5"></div>
+
+
+
+   </body>
+</html>
+
